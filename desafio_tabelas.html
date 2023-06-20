@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css" disabled>
+</head>
+<body>
+    
+</body>
+</html>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID funcionário</th>
+                <th>Nome funcionário</th>
+                <th>Cargo</th>
+                <th>Empresa</th>
+                <th>Email</th>
+                <th>Possui crachá?</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>002012</td>
+                <td>Guilherme F. Silva</td>
+                <td>Atleta</td>
+                <td>Esporte Clube Corinthians</td>
+                <td>guilhermefes@usp.br</td>
+                <td>Sim</td>
+            </tr>
+
+            <tr>
+                <td>001951</td>
+                <td>Abel Ferreira</td>
+                <td>Técnico</td>
+                <td>Sociedade Esportiva Palmeiras</td>
+                <td>zeromundial@porco.br</td>
+                <td>Não</td>
+            </tr>
+
+            <tr>
+                <td>002022</td>
+                <td>Lionel Messi</td>
+                <td>Atleta</td>
+                <td>Esporte Clube Corinthians</td>
+                <td>messitimao@hotmail.com</td>
+                <td>Sim</td>
+            </tr>
+
+            <tr>
+                <td>0031415</td>
+                <td>John Nash</td>
+                <td>Matemático</td>
+                <td>Yale University</td>
+                <td>nash@yale.us</td>
+                <td>Sim</td>
+            </tr>
+
+            <tr>
+                <td>002020</td>
+                <td>Camila Queiroz</td>
+                <td>Assistente de RH</td>
+                <td>Sartorius do Brasil</td>
+                <td>camilaqrz@gmail.com</td>
+                <td>Sim</td>
+            </tr>
+        </tbody>
+        
+            <tfoot>
+                <tr>
+                    <td colspan="5">Quantidade total de funcionários</td>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+    </table>
+ 
+    <button type="button" id="botaoEstilo">Aplica estilo</button>
+    <script>
+
+        function toggleEstilos() {
+            const toggleEstilos = document.querySelector('#estiloTabela');
+
+            if(toggleEstilos.hasAttribute('disabled')) {
+                toggleEstilos.removeAttribute('disabled');
+            } else {
+                toggleEstilos.setAttribute('disabled')
+            }
+            
+            document.querySelector('#botaoEstilo').addEventListener('click', toggleEstilos);
+
+
+        }
+
+
+
+
+</body>
+</html>
